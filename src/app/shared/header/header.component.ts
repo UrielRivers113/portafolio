@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
 
   constructor(public _servicio: InfoPaginaService,
               // Para hacer navegación interna de los componentes  
-              public router: Router) { }
+              private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
     if(termino.length < 1){
       return;
     }
-    this.router.navigate(['/search',termino]);
+    this.router.navigate(['/search', termino]);
   }
 
 }

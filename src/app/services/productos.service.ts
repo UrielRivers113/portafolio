@@ -40,11 +40,7 @@ export class ProductosService {
       } else {
         this.filtrarProductos(termino);
      }
-     // filter barre el arreglo y regresa un nuevo arreglo
-     this.productosFiltrado = this.productos.filter(producto=>{
-       return true;
-     });
-     console.log(this.productosFiltrado); 
+     
    }
 
    private filtrarProductos(termino: string){
